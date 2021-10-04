@@ -17,21 +17,19 @@ public class FileOperation {
 	public static void main(String args[]) {
 //		Do edit the required variables
 		String folderName = "JSfolder";
-		
 		String path = "/Users/jatsodhi/eclipse-workspace/SimplilearnProject/main/";
-		
 		int indentationCount = 10;
 		List<String> fileListNames = new ArrayList<String>();
 		String fileToAdd = "";
 		Scanner sc = new Scanner(System.in);
 		String fileName = "";
 		
-//		createMainFolderIfNotPresent(folderName);
-//		displayAllFiles(path);
-//		listFilesInDirectory(path, indentationCount, fileListNames);
-//		createFile(fileToAdd,sc);
-//		displayFileLocations(fileName, path);
-//		searchFileRecursively(path, fileName, fileListNames);
+		createMainFolderIfNotPresent(folderName);
+		displayAllFiles(path);
+		listFilesInDirectory(path, indentationCount, fileListNames);
+		createFile(fileToAdd,sc);
+		displayFileLocations(fileName, path);
+		searchFileRecursively(path, fileName, fileListNames);
 		deleteFileRecursively(path);
 	}
 
